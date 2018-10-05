@@ -1,5 +1,6 @@
 <html>
   <body>
-    <h1>hello world</h1>
+    <h1>hello from <%= node['fqdn'] %></h1>
+    <h2>mini-hello from <%= node['platform'] %><%= node['platform_version'] %>: running <%= node['chef:version'] %></h2>
   </body>
 </html>
